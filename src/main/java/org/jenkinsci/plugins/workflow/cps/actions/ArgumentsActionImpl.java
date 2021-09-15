@@ -99,7 +99,7 @@ public class ArgumentsActionImpl extends ArgumentsAction {
             if (sensitiveValue.isEmpty()) {
                 continue;
             }
-            modded = modded.replace(variables.get(sensitive), "${" + sensitive + "}");
+            modded = modded.replace(variables.get(sensitive), "REMOVED_VAR");
         }
         return modded;
     }
